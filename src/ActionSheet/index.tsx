@@ -54,6 +54,7 @@ export default class ActionSheet extends React.Component<Props, State> {
     (this._actionSheetHeight = nativeEvent.layout.height);
 
   render() {
+    console.log("Rendering!");
     const { isVisible, overlayOpacity, options } = this.state;
     const useModal = options ? options.useModal === true : false;
     const overlay = isVisible ? (
